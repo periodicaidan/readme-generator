@@ -44,7 +44,6 @@ ${data.tests}
 Github: [${data.githubUsername}](https://github.com/${data.githubUsername})
 
 Email: ${data.email}
-
 `;
 }
 

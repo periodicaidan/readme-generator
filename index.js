@@ -60,7 +60,7 @@ function writeToFile(fileName, data) {
         if (err) {
             console.error(err);
         } else {
-            console.log('Done');
+            console.log('Wrote README.md');
         }
     });
 }
