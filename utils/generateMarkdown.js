@@ -50,6 +50,7 @@ Email: [${data.email}](mailto:${data.email})
 function makeBadge(key, value, color, alt) {
   // The null-coallescing operator (??) doesn't work in my version of Node for...some reason
   // so I've just done the more verbose alternative
+  // Use of `!=` instead of `!==` is deliberate
   color = (color != null) ? color : 'blue';
   alt = (alt != null) ? alt : `${key}: ${value}`;
   return `[![${alt}](https://img.shields.io/badge/${key}-${value}-${color}.svg)](https://shields.io/)`
