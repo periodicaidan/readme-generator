@@ -1,50 +1,49 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `
-  ${data.title}
-  ===
+  return `${data.title}
+===
 
-  ${makeBadge('License', data.license, 'green')}
+${makeBadge('License', data.license, 'green')}
 
-  ## Table of Contents
+## Table of Contents
 
-  1. [Description](#description)
-  2. [Installation](#installation)
-  3. [Usage](#usage)
-  4. [License](#license)
-  5. [Contributing](#contributing)
-  6. [Tests](#tests)
-  7. [Questions](#questions)
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [License](#license)
+5. [Contributing](#contributing)
+6. [Tests](#tests)
+7. [Questions](#questions)
 
-  ## Description
+## Description
 
-  ${data.description}
+${data.description}
 
-  ## Installation
+## Installation
 
-  ${data.installation}
+${data.installation}
 
-  ## Usage
+## Usage
 
-  ${data.usage}
+${data.usage}
 
-  ## License
+## License
 
-  This project is distributed under the ${data.license} license.
+This project is distributed under the ${data.license} license.
 
-  ## Contributing
+## Contributing
 
-  ${data.contributing}
+${data.contributing}
 
-  ## Tests
+## Tests
 
-  ${data.tests}
+${data.tests}
 
-  ## Questions
+## Questions
 
-  Github: [${data.githubUsername}](https://github.com/${data.githubUsername})
+Github: [${data.githubUsername}](https://github.com/${data.githubUsername})
 
-  Email: ${data.email}
+Email: ${data.email}
 
 `;
 }
