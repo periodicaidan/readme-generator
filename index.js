@@ -7,32 +7,26 @@ const LICENSES = ['GPLv3', 'MIT', 'Apache', 'BSD-3-Clause', 'BSD-2-Clause', 'LGP
 // array of questions for user
 const questions = [
     {
-        type: 'input',
         name: 'title',
         message: 'Title:'
     },
     {
-        type: 'input',
         name: 'description',
         message: 'Description:',
     },
     {
-        type: 'input',
         name: 'installation',
         message: 'Installation instructions:',
     },
     {
-        type: 'input',
         name: 'usage',
         message: 'Usage instructions:',
     },
     {
-        type: 'input',
         name: 'contributing',
         message: 'Contributing guidelines:'
     },
     {
-        type: 'input',
         name: 'tests',
         message: 'Testing instructions:',
     },
@@ -43,12 +37,10 @@ const questions = [
         choices: LICENSES,
     },
     {
-        type: 'input',
         name: 'githubUsername',
         message: 'GitHub Username:',
     },
     {
-        type: 'input',
         name: 'email',
         message: 'Email:',
     }
